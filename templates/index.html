@@ -23,6 +23,7 @@
               <td>{{.Price}}</td>
               <td>{{.Amount}}</td>
               <td>
+                <a href="/edit?id={{.Id}}" class="btn btn-sm btn-secondary">Editar</a>
                 <a href="/delete?id={{.Id}}" onclick="if (!confirm('Deseja remover o produto?')) return false" class="btn btn-danger btn-sm">Deletar</a>
               </td>
             </tr>
